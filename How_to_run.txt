@@ -1,0 +1,4 @@
+1. Open Docker to start runing
+2. paste this in terminal: docker run -p 8501:8501 --mount type=bind,source="D:\Term 2 Y3\Capstone\ncf_project_with_merge_data\models\ncf_savedmodel_new",target=/models/ncf -e MODEL_NAME=ncf tensorflow/serving
+3. check it aviable or not: http://127.0.0.1:8501/v1/models/ncf
+4. open new terminal and run this: streamlit run ./dashboard/app.py --server.port 8502
